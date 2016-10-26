@@ -2276,6 +2276,7 @@
                     -ms-transition: all 0.2s ease-in-out;
                     transition: all 0.2s ease-in-out;
                     background: rgba(188, 202, 206, 0.15);
+
                 }
 
                 #header nav ul li.current > a {
@@ -2407,11 +2408,12 @@
     #banner {
         background-attachment: scroll, scroll, scroll, fixed;
         background-color: #645862;
-        background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-        /*background-image: url("../../images/banner.png");*/
+        /*background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");*/
+        background-image: url("../../images/banner.jpg");
         background-position: bottom left, bottom right, top left, top center;
         background-repeat: no-repeat, no-repeat, repeat, no-repeat;
         /*background-size: 25em, 25em, auto, cover;*/
+        background-size: 100%;
         color: #fff;
         cursor: default;
         padding: 9.9%;
@@ -2692,7 +2694,7 @@
         /* Banner */
 
             #banner {
-                background-size: 15em, 15em, auto, cover;
+                /*background-size: 15em, 15em, auto, cover;*/
             }
 
         /* Main */
@@ -3134,8 +3136,8 @@
         /* Banner */
 
             #banner {
-                background-size: 10em, 10em, auto, cover;
-                padding: 3em 0;
+                /*background-size: 10em, 10em, auto, cover;*/
+                /*padding: 3em 0;*/
             }
 
                 #banner .inner {
@@ -3159,7 +3161,7 @@
         /* Main */
 
             #main {
-                background-size: 10em;
+                /*background-size: 10em;*/
                 padding: 3.5em 0 2.5em 0;
             }
 
@@ -3308,4 +3310,22 @@ small {
 .reveal.alt #logo a:hover,
 .reveal.alt #logo a:focus {
     color: #fff;
+}
+
+.btn-s {
+    background-color: #9c7c7e;
+}
+
+.btn-s:hover,
+.btn-s:focus {
+    color: #fff;
+    background-color: #c9b7b8;
+}
+
+#header.reveal.alt  nav ul li a {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#header.reveal.alt  nav ul li.active > a, #header nav ul li:hover > a {
+    color: #222;
 }
